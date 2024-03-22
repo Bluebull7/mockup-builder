@@ -1,6 +1,3 @@
-README.md
-Mantine Mockup Builder
-
 Build interactive mockups with ease using the power of Mantine's React UI library directly within an Electron environment.
 Table of Contents
 
@@ -12,7 +9,7 @@ Table of Contents
 
 Features
 
-![alt text](https://github.com/bluebull7/mockup-builder/blob/[main]/assets/Mockup-tool.png?raw=true)
+assets/Mockup-tool.png
 
     Dynamic Component Import: Drag-and-drop components from the Mantine library directly into your mockup workspace.
     Intuitive Property Controls: Customize the look and behavior of Mantine components using a user-friendly interface.
