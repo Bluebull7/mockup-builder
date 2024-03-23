@@ -1,5 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { DndProvider, useDrag } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+
+const MovableItem = ({ name }) => {
+	const [{ isDragging }, drag] = useDrag(() => ({
+		type: 'item',
+		item: { name },
+		collect: (monitor) => ({
+			isDragging: !!monitor.isDragging(),
+		}),
+	}));
+
+	return (
+		<div ref={drag} style = {{borderL '1px solid black', margin: '5px', opacity: isDragging ? 0.5 : 1}}>
+			{name}
+		</div>
+	      );
+	};
+ReactDOM.render(
+	<DndProvider backend={HTML5Backend}>
+		<MovableItem name="Component 1" />
+	</DndProvider>,
+	document.getElementById('root')
+);
 
 // Drag and Drop Logic (You'll need libraries like React DnD)
 const componentList = document.getElementById('component-list'); 
