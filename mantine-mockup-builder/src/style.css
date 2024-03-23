@@ -1,0 +1,27 @@
+.container { 
+    display: flex; 
+    gap: 20px;
+}
+
+.component-browser {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.mockup-area {
+    width: 70%;
+    border: 2px dashed #ccc;
+    min-height: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.draggable-item {
+    list-style: none;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    cursor: move; 
+}
+
